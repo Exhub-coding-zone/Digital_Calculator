@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>.
+    <link rel="stylesheet" href="claculator2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator 2</title>
+</head>
+<body>
+    <div class="total-calculator-container">
+        <div class="input-box-container">
+            <input type="text" placeholder=" Calculator" class="input-box" readonly>
+
+        </div>
+
+        <div class="button-container">
+            <button class="btn"  onclick=" displayResult= displayResult + 0;    
+             document.querySelector('.input-box').value =displayResult ;
+            ">0</button>
+            <button class="btn" onclick=" displayResult= displayResult + 1;    
+            document.querySelector('.input-box').value =displayResult ;
+           ">1</button>
+            <button class="btn"onclick=" displayResult= displayResult + 2;    
+            document.querySelector('.input-box').value =displayResult ;
+           ">2</button>
+            <button class="btn" onclick=" displayResult= displayResult + 3;    
+            document.querySelector('.input-box').value =displayResult ;
+           ">3</button>
+            <button class="btn"onclick=" displayResult= displayResult + 4;    
+            document.querySelector('.input-box').value =displayResult ;
+           ">4</button>
+            <button class="btn" onclick=" displayResult= displayResult + 5;    
+            document.querySelector('.input-box').value =displayResult ;
+           ">5</button>
+            <button class="btn" onclick=" displayResult= displayResult + 6;    
+            document.querySelector('.input-box').value =displayResult ;
+           ">6</button>
+            <button class="btn" onclick=" displayResult= displayResult + 7;    
+            document.querySelector('.input-box').value =displayResult ;
+           ">7</button>
+            <button class="btn" onclick=" displayResult= displayResult + 8;    
+            document.querySelector('.input-box').value =displayResult ;
+           ">8</button>
+            <button class="btn" onclick=" displayResult= displayResult + 9;    
+            document.querySelector('.input-box').value =displayResult ;
+           ">9</button>
+            <button class="btn" id="sign" onclick=" displayResult= displayResult + '+';    
+            document.querySelector('.input-box').value =displayResult ;
+           ">+</button>
+            <button class="btn" id="sign" onclick=" displayResult= displayResult + '-';    
+            document.querySelector('.input-box').value =displayResult ;
+           ">-</button>
+            <button class="btn" id="sign" onclick=" displayResult= displayResult + '/';    
+            document.querySelector('.input-box').value =displayResult ;
+           ">/</button>
+            <button class="btn"id="sign" onclick=" displayResult= displayResult + '*';    
+            document.querySelector('.input-box').value =displayResult ;
+           ">*</button>
+            <button class="btn" id="sign" onclick=" displayResult= displayResult + '.';    
+            document.querySelector('.input-box').value =displayResult ;
+           ">.</button>
+            <button class="btn" id="sign" onclick=" displayResult = eval(displayResult);    
+            document.querySelector('.input-box').value =displayResult ;
+           ">=</button>
+            <button class="btn" onclick=" displayResult= '';    
+            document.querySelector('.input-box').value =displayResult ;
+           ">C</button>
+
+
+
+        </div>
+
+    </div>
+
+    <script>
+        let displayResult = " ";
+        document.querySelector('.input-box').value =  displayResult
+    </script>
+
+</body>
+</html>
